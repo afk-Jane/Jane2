@@ -1,0 +1,59 @@
+nav {
+    display: flex;
+    gap: 5rem;
+    padding: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+
+    &:hover {
+        color: #4ade80;
+    }
+}
+
+.nav-links,
+.language {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+
+  &:hover {
+    color: #4ade80;
+  }
+}
+
+.language a {
+  padding: 0.25em 0.5em;
+  border-radius: 8px;
+  border: 1px solid #4ade80;
+  background-color: transparent;
+  color: #4ade80;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &.active,
+  &:hover {
+    background-color: #4ade80;
+    color: #0f172a;
+    font-weight: bold;
+  }
+
+  &:hover {
+    background-color: #00bee8;
+    color: whitesmoke;
+  }
+}
+
+.nav-links a {
+    font-size: 1.75rem;
+
+}

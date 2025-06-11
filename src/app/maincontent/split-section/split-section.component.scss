@@ -1,0 +1,57 @@
+.split-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8vw;
+  gap: 3rem;
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .left {
+    flex: 1;
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .feature {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        i {
+          font-size: 1.5rem;
+          color: #a259ff;
+        }
+
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.mini-contact-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+
+  .small-icons {
+    display: flex;
+    gap: 2rem;
+
+    a img {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

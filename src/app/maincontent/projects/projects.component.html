@@ -1,0 +1,11 @@
+
+<h2>Portfolio</h2>
+<p>Explore a selection of my work here – interact with projects to see my skills in action.</p>
+
+<div class="display-projects" id="display-projects">
+<app-project-card
+    *ngFor="let project of projects; let i = index"
+    [project]="project"
+    [reverse]="i % 2 === 1"
+></app-project-card>
+</div>

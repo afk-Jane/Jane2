@@ -1,0 +1,17 @@
+<div class="project-card" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+  <div class="image-container">
+    <img [src]="project.image" [alt]="project.title" />
+    <div class="overlay">
+      <div class="content" [@slideFade]="isHovered ? 'visible' : 'hidden'">
+        <h3 class="title">{{ project.title }}</h3>
+        <p class="description">{{ project.description }}</p>
+        <p class="tech">{{ project.tech.join(' | ') }}</p>
+
+        <div class="buttons">
+          <a class="btn live" [href]="project.liveLink" target="_blank">Live test</a>
+          <a class="btn github" [href]="project.githubLink" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

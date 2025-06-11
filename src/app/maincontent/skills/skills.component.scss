@@ -1,0 +1,28 @@
+.skills {
+    background-image: url('/public/img/bluethingy.png');
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill-icon {
+    width: 56px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-card {
+    flex: 1 1 120px;
+    max-width: 160px;
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+}

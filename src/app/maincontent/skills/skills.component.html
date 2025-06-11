@@ -1,0 +1,24 @@
+<div class="skills">
+    <div class="skill-icons">
+        <div class="skill-card" *ngFor="let skill of skills">
+            <img [src]="skill.icon" [alt]="skill.name + ' icon'" class="skill-icon">
+            <h4>{{ skill.name }}</h4>
+        </div>
+        <div class="skill-card">
+            <img src="/icons/skills/continually_learning.png" class="skill-icon">
+            <h4>Continually learning</h4>
+        </div>
+    </div>
+    <div class="skill-text">
+        <h2>Skills</h2>
+        <div class="right-long-line mint"></div>
+        <p> projects = experience <br>
+            HTML, CSS, JavaScript...  
+        </p>
+        <br>
+        <h3>looking for another skill?</h3>
+        <p>another sentence</p>
+        <button>Get in touch</button>
+    </div>
+
+</div>

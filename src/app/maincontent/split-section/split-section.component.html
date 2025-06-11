@@ -1,0 +1,15 @@
+<section class="split-section" [class.reverse]="reverse">
+  <div class="left">
+    <h2>{{ title }}</h2>
+    <p>{{ text }}</p>
+    <div class="features">
+      <div *ngFor="let feature of features" class="feature">
+        <img [src]="feature.icon" alt="Feature Icon" width="24" height="24" />
+        <p>{{ feature.label }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <img [src]="imageSrc" alt="section image" />
+  </div>
+</section>

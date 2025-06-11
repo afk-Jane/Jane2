@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Medium.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #141d2f;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+$navy: #141d2f;
+$indigo: #4b47ff;
+$bright-cyan: #00bee8;
+$mint: #1ce6b5;
+
+.left-line {
+  height: 4px;
+  width: 5rem;
+  margin: 20px 0;
+  background-color: $indigo;
+}
+
+button {
+    background-color: #0fe2c2;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 12px;
+    color: whitesmoke;
+    align-self: center;
+}

@@ -1,0 +1,11 @@
+h2 {
+    font-size: 3rem;
+}
+
+#display-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
