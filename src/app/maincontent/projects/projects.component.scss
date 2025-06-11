@@ -3,9 +3,16 @@ h2 {
 }
 
 #display-projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding-top: 2rem;
+    max-width: 1940px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-top: 2rem;
+
+    > app-project-card {
+    width: calc(50% - 2rem); 
+    aspect-ratio: 1 / 1;  
+  }
 }

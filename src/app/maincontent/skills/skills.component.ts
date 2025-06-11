@@ -18,5 +18,7 @@ export class SkillsComponent {
     { name: 'Angular', icon: '/icons/skills/ng.png' },
     { name: 'TypeScript', icon: '/icons/skills/ts.png' },
     { name: 'Git', icon: '/icons/skills/git.png' },
+    { name: 'Rest-API', icon: '/icons/skills/rest-api.png' },
+    { name: 'Scrum', icon: '/icons/skills/scrum.png' },
   ];
 }

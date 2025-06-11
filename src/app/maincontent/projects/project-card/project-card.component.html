@@ -1,17 +1,20 @@
 <div class="project-card" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
-  <div class="image-container">
-    <img [src]="project.image" [alt]="project.title" />
-    <div class="overlay">
-      <div class="content" [@slideFade]="isHovered ? 'visible' : 'hidden'">
-        <h3 class="title">{{ project.title }}</h3>
-        <p class="description">{{ project.description }}</p>
-        <p class="tech">{{ project.tech.join(' | ') }}</p>
-
-        <div class="buttons">
-          <a class="btn live" [href]="project.liveLink" target="_blank">Live test</a>
-          <a class="btn github" [href]="project.githubLink" target="_blank">GitHub</a>
-        </div>
-      </div>
+    <div class="image-container">
+        <img [src]="isHovered ? project.detailedImage : project.image" [alt]="project.title" [ngClass]="{ 'blurred': isHovered }" />
     </div>
-  </div>
+
+    <div class="overlay" [@overlaySlide]="isHovered ? 'visible' : 'hidden'">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <span class="tech">
+        <ng-container *ngFor="let t of project.tech; let last = last">
+            {{ t }}<span *ngIf="!last"> | </span>
+        </ng-container>
+        </span>
+    </div>
+
+    <div class="buttons" *ngIf="isHovered" [@buttonsSlide]>
+        <a [href]="project.liveLink" class="filled" target="_blank">Live Demo</a>
+        <a [href]="project.githubLink" class="outlined" target="_blank">Code</a>
+    </div>
 </div>
