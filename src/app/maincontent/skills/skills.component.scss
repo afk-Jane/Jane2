@@ -1,7 +1,10 @@
 .skills {
     background-image: url('/public/img/bluethingy.png');
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+justify-content: center;
+    max-width: 1940px;
+    margin: 0 auto;
     gap: 2rem;
 }
 
